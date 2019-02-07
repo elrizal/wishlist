@@ -1,0 +1,26 @@
+{
+  "name": "hamburgers-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elrizal/wishlist.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/elrizal/wishlist/issues"
+  },
+  "homepage": "https://github.com/elrizal/wishlist#readme"
+}

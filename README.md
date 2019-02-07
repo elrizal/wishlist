@@ -1,1 +1,2 @@
 # wishlist
+example of MVC
