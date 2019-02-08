@@ -1,46 +1,41 @@
 <div class="row">
     <div class="col m6">
-      <h3>Own it</h3>
-  <ul class="collapsible">
-     {{#each wishlist}} {{#unless bought}} {{> wishlistp/wishlist-block bought=true}} {{/unless}} {{/each}}
-  </ul>
+        <h3 class="primary-font">Own it</h3>
+        <ul class="collapsible">
+            {{#each wishlist}} {{#unless bought}} {{> wishlistp/wishlist-block bought=true}} {{/unless}} {{/each}}
+        </ul>
     </div>
 
     <div class="col m6">
-        <h3>Things not yet bought</h3>
+        <h3 class="primary-font">Want it</h3>
         <ul class="collapsible">
-           {{#each wishlist}} {{#if bought}} {{> wishlistp/wishlist-block bought=false}} {{/if}} {{/each}}
+            {{#each wishlist}} {{#if bought}} {{> wishlistp/wishlist-block bought=false}} {{/if}} {{/each}}
         </ul>
     </div>
 </div>
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
     <div class="modal-content">
-<form class="create-form">
-    <div class="form-group">
-        <label for="ca"> Name:</label>
-        <input type="text" id="ca" name="name">
-    </div>
-
-    <p>
-     <label for="bought">Bought?</label><br>
-     <input type="radio" name="bought" value="1">
-        <span>Got it already</span>
-      </label>
-    </p>
-    <p>
-      <label>
+        <form class="create-form">
+            <div class="form-group">
+                <label for="ca"> Name:</label>
+                <input type="text" id="ca" name="name">
+            </div>
+            <p>
+                <label for="bought">Bought?</label><br>
+                <input type="radio" name="bought" value="1">
+                <span>Got it already</span>
+                </label>
+            </p>
+            <p>
+                <label>
        <input type="radio" name="bought" value="0">
         <span>Haven't bought</span>
       </label>
-    </p>
-
-
+            </p>
     </div>
     <div class="modal-footer">
-    <button class='btn' id='add' type="submit">Add</button>
+        <button class='btn' id='add' type="submit">Add</button>
     </div>
     </form>
-  </div>
-
-
+</div>

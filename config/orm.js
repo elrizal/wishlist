@@ -1,6 +1,5 @@
 // Import MySQL connection.
 const connection = require('../config/connection.js');
-
 //before CRUD: add in SQL syntax, then make the objects readable for SQL
 // Helper function for SQL syntax to add in those "?" part of SQL queiries 
 function printQuestionMarks(num) {
@@ -10,7 +9,6 @@ function printQuestionMarks(num) {
   }
   return arr.toString();
 }
-
 // Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
   const arr = [];
