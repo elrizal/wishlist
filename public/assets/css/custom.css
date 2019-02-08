@@ -2,3 +2,37 @@
     margin-bottom: 5px;
     width: 100%
 }
+body {
+    background-color: rgb(237, 237, 237);
+    font-family: 'Open Sans', sans-serif;
+
+}
+.brand-logo {
+    color: black !important;
+}
+nav {
+    color: black;
+    background-color: white
+}
+.btn {
+   background-color:  rgb(135, 93, 182)
+}
+.primary {
+    color: rgb(135, 93, 182) !important;
+}
+a{
+    color: rgb(135, 93, 182);
+    transition: 0.3s;
+}
+a:hover {
+    color: rgb(175, 137, 218);
+    font-weight: 700
+}
+.yeseva {
+    font-family: 'Yeseva One', cursive;
+}
+.primary-font {
+    font-weight: 800;
+    color:  rgb(135, 93, 182);
+    font-size: 1.8em
+}

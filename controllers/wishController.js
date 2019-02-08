@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-
 //now to "control" that object we just made
 const wishlist = require("../model/wishlist.js");
 console.log('controllerjs loaded \n')
