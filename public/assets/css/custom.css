@@ -7,6 +7,21 @@ body {
     font-family: 'Open Sans', sans-serif;
 
 }
+.bye {
+     padding-left: 1em;
+     text-align: right;
+     color: gray;
+    }
+.material_icons {
+padding: 0px;
+    }
+    .collapsible-header i {
+        width: 2rem;
+        font-size: 1.6rem;
+        display: inline;
+        text-align: center;
+        margin-right: 0.3rem;
+    }
 .brand-logo {
     color: black !important;
 }
@@ -39,6 +54,9 @@ a:hover {
     font-weight: 800;
     color:  rgb(135, 93, 182);
     font-size: 1.8em
+}
+.gray-text {
+    color: gray
 }
 #video-prod{
     right: 0;
