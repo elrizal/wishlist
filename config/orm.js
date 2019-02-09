@@ -72,6 +72,7 @@ const orm = {
       cb(result);
     });
   },
+  
   delete: function(table, condition, cb) {
     let queryString = "DELETE FROM " + table;
     queryString += " WHERE ";
