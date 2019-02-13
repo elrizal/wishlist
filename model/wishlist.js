@@ -1,4 +1,5 @@
 const orm = require("../config/orm.js");
+// Since ORM was used to "translate" SQL commands, this gives commands for the controller to use up:
 const wishlist = {
   all: function(cb) {
     orm.all("wishlist", function(res) {
@@ -18,6 +19,6 @@ const wishlist = {
   }
 };
 
-// Export the database functions for the controller (catsController.js).
-console.log(`wishlist model: \n model's import of ${orm} ======= \n ${wishlist}`)
+// Export the database functions for the controller 
+console.log(`wishlist model`)
 module.exports = wishlist;

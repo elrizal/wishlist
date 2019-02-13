@@ -1,5 +1,6 @@
 // Import MySQL connection.
 const connection = require('../config/connection.js');
+
 //before CRUD: add in SQL syntax, then make the objects readable for SQL
 // Helper function for SQL syntax to add in those "?" part of SQL queiries 
 function printQuestionMarks(num) {
