@@ -2,8 +2,8 @@
 $(document).ready(function () {
   $('.collapsible').collapsible();
   $('.modal').modal();
-
   $(".bye").on("click", function (event) {
+
   const thisThing = {
     name: $("#ca").val().trim(),
     bought: $("[name=bought]:checked").val().trim()
@@ -23,10 +23,11 @@ $(document).ready(function () {
 });
 
 $(function () {
-
-  $(".change-sleep").on("click", function (event) {
+  $(".change").on("click", function (event) {
+    
     const id = $(this).data("id");
     const newStatus = $(this).data("newstatus");
+    console.log('on change')
 
     const updatedState = {
       bought: newStatus
@@ -34,6 +35,17 @@ $(function () {
 
     // Send the PUT request.
     $.ajax("/api/wishlist/" + id, {
+      type: "PUT",
+      data: updatedState
+    }).then(
+      function () {
+        console.log("changed stat to", newStatus);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+
+    $.ajax("/api/people/" + id, {
       type: "PUT",
       data: updatedState
     }).then(
