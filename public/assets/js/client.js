@@ -20,6 +20,19 @@ $(document).ready(function () {
     }
   );
   });
+
+  $(".delete").on("click", function () {
+
+    // read id from button
+    const id = $(this).data("id");
+    $.ajax({
+      url: "/api/wishlist/" + id,
+      method: "DELETE"
+    }).then(function (data) {
+      location.reload();
+    });
+
+  })
 });
 
 $(function () {
@@ -35,17 +48,6 @@ $(function () {
 
     // Send the PUT request.
     $.ajax("/api/wishlist/" + id, {
-      type: "PUT",
-      data: updatedState
-    }).then(
-      function () {
-        console.log("changed stat to", newStatus);
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
-
-    $.ajax("/api/people/" + id, {
       type: "PUT",
       data: updatedState
     }).then(
