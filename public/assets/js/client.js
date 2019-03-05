@@ -8,31 +8,19 @@ $(document).ready(function () {
     name: $("#ca").val().trim(),
     bought: $("[name=bought]:checked").val().trim()
   };
-  // Send the POST request.
-  $.ajax("/api/wishlist", {
-    type: "DELETE",
-    data: thisThing
-  }).then(
-    function () {
-      console.log("created new");
-      location.reload();
-      $('#update').text('updated')
-    }
-  );
-  });
+
 
   $(".delete").on("click", function () {
-
     // read id from button
-    const id = $(this).data("id");
+    const todoId = $(this).attr("data-id");
     $.ajax({
-      url: "/api/wishlist/" + id,
+      url: "/api/wishlist" + todoId,
       method: "DELETE"
     }).then(function (data) {
       location.reload();
     });
-
   })
+
 });
 
 $(function () {
