@@ -2,27 +2,24 @@
 $(document).ready(function () {
   $('.collapsible').collapsible();
   $('.modal').modal();
-  $(".bye").on("click", function (event) {
 
   const thisThing = {
     name: $("#ca").val().trim(),
     bought: $("[name=bought]:checked").val().trim()
   };
+
   // Send the POST request.
   $.ajax("/api/wishlist", {
     type: "DELETE",
     data: thisThing
   }).then(
     function () {
-      console.log("created new");
       location.reload();
       $('#update').text('updated')
     }
   );
-  });
 
   $(".delete").on("click", function () {
-
     // read id from button
     const id = $(this).data("id");
     $.ajax({
@@ -40,7 +37,6 @@ $(function () {
     
     const id = $(this).data("id");
     const newStatus = $(this).data("newstatus");
-    console.log('on change')
 
     const updatedState = {
       bought: newStatus
@@ -64,7 +60,9 @@ $(function () {
     event.preventDefault();
     const newThing = {
       name: $("#ca").val().trim(),
-      bought: $("[name=bought]:checked").val().trim()
+      description: $("#da").val().trim(),
+      link: $("#la").val().trim(),
+      bought: $("[name=bought]:checked").val().trim(),
     };
 
     console.log(`add this ${newThing}`)
@@ -80,8 +78,6 @@ $(function () {
         $('#update').text('updated')
       }
     );
-
-
   });
 });
 console.log('client js \n')
