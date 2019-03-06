@@ -16,6 +16,11 @@ const wishlist = {
     orm.update("wishlist", objColVals, condition, function(res) {
       cb(res);
     });
+  },
+  delete: function(condition, cb) {
+    orm.delete("wishlist", condition, function(res) {
+      cb(res);
+    });
   }
 };
 
