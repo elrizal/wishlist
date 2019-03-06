@@ -16,9 +16,9 @@ router.get("/", function(req, res) {
   
   router.post("/api/wishlist", function(req, res) {
     wishlist.create([
-      "name", "bought"
+      "name", "bought", "description", "link"
     ], [
-      req.body.name, req.body.bought
+      req.body.name, req.body.bought, req.body.description, req.body.link
     ], function(result) {
       // Send back the ID of the new quote
       res.json({ id: result.insertId });
