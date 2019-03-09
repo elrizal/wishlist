@@ -1,3 +1,3 @@
 # wishlist
-Example of an MVC-based application using Hnadlebars with MySQL
+Example of an MVC-based application using Handlebars with MySQL
 
