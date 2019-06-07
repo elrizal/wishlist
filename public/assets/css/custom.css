@@ -2,109 +2,129 @@
     margin-bottom: 5px;
     width: 100%
 }
+
 body {
     background-color: rgb(237, 237, 237);
     font-family: 'Open Sans', sans-serif;
 }
+
 .bye {
-     padding-left: 1em;
-     text-align: right;
-     color: gray;
-    }
+    padding-left: 1em;
+    text-align: right;
+    color: gray;
+}
+
 .material_icons {
-padding: 0px;
-    }
-    .collapsible-header i {
-        width: 2rem;
-        font-size: 1.6rem;
-        display: inline;
-        text-align: center;
-        margin-right: 0.3rem;
-    }
+    padding: 0px;
+}
+
+.collapsible-header i {
+    width: 2rem;
+    font-size: 1.6rem;
+    display: inline;
+    text-align: center;
+    margin-right: 0.3rem;
+}
+
 .brand-logo {
     color: rgb(64, 85, 206) !important;
 }
+
 nav {
     color: black;
     background-color: white
 }
+
 .btn {
-   background-color:  rgb(64, 85, 206);
+    background-color: rgb(64, 85, 206);
 }
+
 .primary {
     color: rgb(64, 85, 206);
 }
+
 a {
     color: rgb(64, 85, 206);
-    transition: 0.3s;;
+    transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 }
+
 a:hover {
     color: rgb(160, 118, 208);
     font-weight: 700
 }
-.btn:hover, .btn:active{
+
+.btn:hover,
+.btn:active {
     color: white;
     background-color: rgb(86, 145, 232);
 }
+
 .yeseva {
     font-family: 'Yeseva One', cursive;
 }
-.notes{
+
+.notes {
     color: gray;
     text-transform: uppercase;
     font-size: 10px
 }
+
 .controlicons {
     border-radius: 50px;
     box-shadow: 2px 2px 4px 0px #aeaeae57;
     padding: 5px;
     margin: 2px;
 }
+
 p {
     line-height: 0.5px;
 }
-.collapsible-body {
 
+.collapsible-body {
     padding: 1rem;
 }
+
 .primary-font {
     font-weight: 800;
-    color:  rgb(64, 85, 206);
+    color: rgb(64, 85, 206);
     font-size: 1.8em
 }
+
 .gray-text {
     color: gray
 }
-#video-prod{
+
+#video-prod {
     right: 0;
     bottom: 0;
-
- 
     filter: alpha(opacity=30);
     opacity: 0.3;
     -webkit-filter: alpha(opacity=30);
 }
+
 video {
     height: 500px;
     width: 800px;
     object-fit: fill
-  }
-  
+}
+
 header {
     position: relative;
     height: 400px;
     overflow: hidden;
     color: white
-  }
-footer{
-    margin-top: 20px;
+}
+
+footer {
+    margin-top: 30px;
     padding: 10px;
     height: 100px;
 }
+
 .header__bg {
     position: absolute;
     top: 0;
@@ -121,7 +141,8 @@ footer{
     -ms-transform: skewY(-6deg);
     -o-transform: skewY(-6deg);
 }
-  header h1 {
+
+header h1 {
     position: relative;
     color: white;
-  }
+}

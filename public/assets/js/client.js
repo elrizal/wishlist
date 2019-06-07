@@ -19,6 +19,10 @@ $(document).ready(function () {
     }
   );
 
+
+});
+
+$(function () {
   $(".delete").on("click", function () {
     // read id from button
     const id = $(this).data("id");
@@ -30,9 +34,7 @@ $(document).ready(function () {
     });
 
   })
-});
-
-$(function () {
+  
   $(".change").on("click", function (event) {
     
     const id = $(this).data("id");
@@ -58,6 +60,7 @@ $(function () {
   $(".create-form").on("submit", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
+
     const newThing = {
       name: $("#ca").val().trim(),
       description: $("#da").val().trim(),
