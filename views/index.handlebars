@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col s12 m6">
         <h3 class="primary-font">Own it</h3>
+        <i>Check the shopping cart to remind yourself to buy another</i>
         <ul class="collapsible">
             {{#each wishlist}} {{#unless bought}} {{> wishlistp/wishlist-block bought=true}} {{/unless}} {{/each}}
         </ul>
@@ -8,11 +9,13 @@
 
     <div class="col s12 m6">
         <h3 class="primary-font">Want it</h3>
+        <i>"Check" if you just got it</i>
         <ul class="collapsible">
             {{#each wishlist}} {{#if bought}} {{> wishlistp/wishlist-block bought=false}} {{/if}} {{/each}}
         </ul>
     </div>
 </div>
+
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
     <div class="modal-content">
