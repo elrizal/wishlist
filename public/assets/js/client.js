@@ -18,8 +18,6 @@ $(document).ready(function () {
       $('#update').text('updated')
     }
   );
-
-
 });
 
 $(function () {
@@ -32,7 +30,6 @@ $(function () {
     }).then(function (data) {
       location.reload();
     });
-
   })
   
   $(".change").on("click", function (event) {
