@@ -29,7 +29,7 @@ ADD link varchar(500);
 ALTER TABLE wishlist
 ADD description varchar(500);
 
-UPDATE wishlist SET description = "Just want a 9 inch one!", link = "https://www.bestbuy.com/site/apple-ipad-latest-model-with-wi-fi-32gb-gold/5201400.p?skuId=5201400" WHERE id = 1;
+UPDATE wishlist SET description = "Just want the 10 inch one!", link = "https://www.bestbuy.com/site/apple-ipad-latest-model-with-wi-fi-32gb-gold/5201400.p?skuId=5201400" WHERE id = 1;
 
 UPDATE wishlist SET description = "Only the best", link = "https://www.bestbuy.com/site/nintendo-switch-32gb-console-neon-red-neon-blue-joy-con/5670100.p?skuId=5670100" WHERE id = 2;
 
