@@ -14,7 +14,7 @@ router.get("/", function(req, res) {
     });
   });
   
-  router.post("/api/wishlist", function(req, res) {
+  router.post("/data/wishlist", function(req, res) {
     wishlist.create([
       "name", "bought", "description", "link"
     ], [
@@ -25,7 +25,7 @@ router.get("/", function(req, res) {
     });
   });
   
-  router.put("/api/wishlist/:id", function(req, res) {
+  router.put("/data/wishlist/:id", function(req, res) {
     let condition = "id = " + req.params.id;
     console.log("condition", condition);
     wishlist.update({
@@ -40,7 +40,7 @@ router.get("/", function(req, res) {
     });
   });
   
-  router.delete("/api/wishlist/:id", function(req, res) {
+  router.delete("/data/wishlist/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
     wishlist.delete(condition, function(result) {
