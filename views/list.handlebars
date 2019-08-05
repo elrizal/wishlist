@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="col s12 m6">
+        <h3 class="primary-font">Own it</h3>
+        <i>Check the shopping cart to remind yourself to buy another</i>
+        <ul class="collapsible">
+            {{#each wishlist}} {{#unless bought}} {{> wishlistp/wishlist-block bought=true}} {{/unless}} {{/each}}
+        </ul>
+    </div>
+
+    <div class="col s12 m6">
+        <h3 class="primary-font">Want it</h3>
+        <i>"Check" if you just got it</i>
+        <ul class="collapsible">
+            {{#each wishlist}} {{#if bought}} {{> wishlistp/wishlist-block bought=false}} {{/if}} {{/each}}
+        </ul>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <form class="create-form">
+            <div class="form-group">
+                <label for="ca"> Name:</label>
+                <input type="text" id="ca" name="name">
+            </div>
+            <div class="form-group">
+                <label for="ca"> Link to site:</label>
+                <input type="text" id="la" name="link">
+            </div>
+             <div class="form-group">
+                <label for="ca"> Notes:</label>
+                <input type="text" id="da" name="description">
+            </div>
+            <p>Bought?</p>
+            <label>
+                <input type="radio" name="bought" value="2">
+                <span>Got it already</span>
+                </label>
+                <label>
+            <input type="radio" name="bought" value="1">
+                <span>Haven't bought</span>
+            </label>
+            
+    </div>
+    <div class="modal-footer">
+        <button class='btn' id='add' type="submit">Add</button>
+    </div>
+    </form>
+</div>
